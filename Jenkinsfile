@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Run docker') {
       steps {
-        sh 'docker run -t -p 8001:8001 demo'
+        sh 'docker run -t -p 3000:8001 demo'
       }
     }
   }
