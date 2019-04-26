@@ -17,5 +17,10 @@ pipeline {
         sh '#npm run test'
       }
     }
+    stage('Create docker image') {
+      steps {
+        sh 'sudo docker build -t demo .'
+      }
+    }
   }
 }
